@@ -8,6 +8,12 @@ import { Component } from '@angular/core';
   </h1>
 
   <app-input-button-unit></app-input-button-unit>
+
+  <ul>
+    <li *ngFor="let todoItem of todoList">
+      {{ todoItem.title }}
+    </li>
+  </ul>
 `,
   styleUrls: ['./app.component.css']
 })
